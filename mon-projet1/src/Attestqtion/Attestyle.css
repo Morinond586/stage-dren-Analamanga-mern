@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.sidebars {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    height: 100vh;
+    padding: 0 1rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186, 255);
+}
+.sidebars:hover{
+    width: 220px;
+    transition: 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover,
+.active {
+    background: #e0e0e058;
+}
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span {
+    overflow: hidden;
+}
+.menu a .icons {
+    font-size: 1rem;
+}
+.logout {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* **** main body section **** */
+.main--content {
+    /* position: relative; */
+    /* background: #ebe9e9; */
+    width: 100%;
+    padding: 1rem;
+   margin-top: -50vh;
+   /* justify-content: space-between; */
+}
+
+.main--contents {
+        /* position: relative; */
+    /* background: #ebe9e9; */
+    width: 100%;
+    padding: 1rem;
+   margin-top: -100vh;
+   /* justify-content: space-between; */
+}
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.header--title {
+    color: rgba(133, 99, 186, 255);
+}
+.user--info {
+    display: flex;
+    gap: 1rem;
+}
+.user--info a {
+    text-decoration: none;
+    background: #26678e;
+    color: #ffffff;
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+.search-box {
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+.search-box input {
+    background: transparent;
+    padding: 10px;
+}
+.search-box img {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.search-box i:hover{
+    transform: scale(1.2);
+}
+
+/* ***** card container *****  */
+
+.card--container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.main--title {
+    color: rgba(113, 99, 186, 255);
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+.payment--card {
+    /* background: rgb(229, 223, 223); */
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 280px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.payment--card:hover{
+    transform: translateY(-5px);
+}
+.card--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.amout {
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 12px;
+    font-weight: 200;
+}
+.amout--value {
+    font-size: 24px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.icon {
+    color: #fff;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    /* background: red; */
+}
+.card-detail {
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 2px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* color css */
+.light-red {
+    background: rgb(251, 233, 233);
+}
+.light-purple {
+    background: rgb(254, 226, 254);
+}
+.light-green {
+    background: rgb(235, 254, 235);
+}
+.light-blue {
+    background: rgb(236, 236, 254);
+}
+.light-dark {
+    background: rgb(190, 188, 234);
+}
+.dark-red {
+    background: red;
+}
+.dark-purple {
+    background: purple;
+}
+.dark-green {
+    background: green;
+}
+.dark-blue  {
+    background: blue;
+}
+
+.dark-darkblue  {
+    background: darkblue;
+}
+
+/* **** tabular section **** */
+.tabular--wrapper {
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+    overflow-x: auto; 
+    /* Permettre le défilement horizontal sur les petits écrans */
+}
+
+.table_wrapper {
+    width: 100%;
+    align-items: center;
+    padding: 5rem;
+    overflow-x: auto; /* Permettre le défilement horizontal sur les petits écrans */
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+thead {
+    background: rgba(113, 99, 186, 255);
+    color: #fff;
+}
+th {
+    padding: 15px;
+    text-align: center;
+}
+tbody{
+    background: #f2f2f2;
+}
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background: #fff;
+}
+tfoot{
+    background: rgba(113, 99, 186, 255);
+    font-weight: bold;
+    color: #fff;
+}
+tfoot td {
+    padding: 15px;
+}
+.table-container .butt {
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+.table-container .but {
+    color: red;
+    background: none;
+    cursor: pointer;
+}
+
+#table_wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+/* Ajouts pour le rendu responsive */
+
+@media only screen and (max-width: 768px) {
+    /* Réduire la taille des cellules sur les petits écrans */
+    th, td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* Encore plus de réduction pour les écrans très petits */
+    th, td {
+        padding: 8px;
+        font-size: 10px;
+    }
+}
+
+/* chart */
+.chart {
+    display: flex;
+    width: 430px;
+    gap: 50%;
+    text-align: center;
+}
+.slect {
+    display: flex;
+    gap: 100px;
+    text-align: center;
+}
+
+@media print {
+    .no-print {
+      display: none;
+    }
+  }
+  
+/* form {
+    display: flex;
+    gap: 1.2rem;
+}
+form .frm {
+    width: 25%;
+}
+.titl{
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 500;
+    color: rgba(113, 99, 186, 255);
+}
+.h7 {
+    color: rgba(113, 99, 186, 255);
+}
+
+ .form-outer {
+    overflow: hidden;
+    visibility: hidden;
+} */
+
+
+

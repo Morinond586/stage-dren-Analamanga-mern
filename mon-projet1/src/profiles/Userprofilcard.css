@@ -1,0 +1,136 @@
+.upc {
+    width: 50%;
+    border-radius: 4px;
+    padding-bottom: 20px;
+    background: rgb(245, 241, 241);
+}
+
+.np {
+    margin-top: -6%;
+}
+
+.gradiant {
+    background-image: linear-gradient(#91baff, rgba(113, 99, 186, 255));
+    height: 125px;
+    border-radius: 4px  4px 0px 0px;
+}
+
+.profile-down img {
+    border-radius: 70%;
+    margin-top: -75px;
+    padding: 5px;
+    background: white;
+    width: 30%;
+    height: 160px;
+}
+
+.profil-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.profile-description {
+    padding: 20px 40px;
+    font-size: 16px;
+}
+
+.profil-button {
+    font-size: 16px;
+    background:  linear-gradient(#91baff, rgba(113, 99, 186, 255));
+    margin: 10px 100px;
+    padding-top: 8px;
+    padding-bottom: 1àpx;
+    border-radius: 40px;
+    width: 34%;
+}
+
+a{
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+}
+
+.navroute {
+  margin-top: 20px;
+  background-color: rgba(113, 99, 186, 255);
+  margin-right: 100px;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+/* vaova */
+
+/* //Dashboard.css */
+
+.modal-overlay {
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 50%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-contents {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modal-contents h2 {
+    margin-top: 0;
+  }
+  
+  .modal-contents form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-contents label {
+    margin-bottom: 10px;
+  }
+  
+  .modal-contents input, 
+  .modal-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal-contents button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-contents button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .modal-contents button[type="button"] {
+    background-color: #f44336;
+    color: white;
+  }
+  

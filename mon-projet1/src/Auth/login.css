@@ -1,0 +1,232 @@
+/* .body {
+    font-family: 'Poppins', sans-serif;
+    background: #fcf4fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    width: 70vw;
+    min-height: 480px;
+    max-width: 100%;
+}
+
+.content button {
+    background-color: #82257b;
+    color: #fff;
+    padding: 10px 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px; 
+}
+.right-box {
+    padding:  40px 30px 40px 40px;
+}
+
+.bt:hover {
+    background-color: #82257b;
+}
+
+.header-text h1, .forgot a {
+    color: #82257b;
+}
+
+.switch-content {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 0 60px 60px 0;
+    z-index: 1000;
+}
+
+.content.active .switch-content {
+    transform: translateX(100%);
+    border-radius: 60px 0 0 60px;
+}
+
+
+.switch {
+    background-color: #82257b;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.content.active .switch {
+    transform: translateX(50%);
+}
+
+.switch-pannel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.switch-left {
+    transform: translateX(-200%);
+}
+
+.content.active .switch-left {
+    transform: translateX(0);
+}
+
+.switch-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.content.active .switch-right {
+    transform: translateX(200%);
+} */
+
+
+
+
+
+.body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, rgba(56, 69, 66, 0.8), rgba(92, 134, 120, 0.8)), url(../images/ccc.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  }
+
+  .text-danger {
+    color: red;
+    font-size: 0.875rem; /* Ajustez la taille du texte selon vos besoins */
+    margin: 6px;
+  }
+  
+  
+  .content {
+    display: flex;
+    width: 50%;
+    background:  rgba(37, 44, 42, 0.8); 
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .right-box {
+    /* background-color: #c8ccd0; */
+    color: white;
+    /* margin: 2px ; */
+  }
+  
+  .header-text {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    border-radius: 4px;
+  }
+  
+  .btnl {
+    background-color: rgba(40, 180, 133, 0.8);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .content .switch-content {
+    background-image: url(../images/log.jpg);
+    background-size: cover;
+    position: relative; 
+    width: 100%;
+    height: 600px;
+  }
+  
+  .switch {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .switch-pannel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .switch-left {
+    background-color:rgba(40, 180, 133, 0.8);
+  }
+  
+  .switch-right {
+    background-color: #fff;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-spinner {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  

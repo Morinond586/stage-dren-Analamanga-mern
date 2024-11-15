@@ -1,0 +1,37 @@
+/* Info Card */
+
+.dasboard .info-card {
+    padding-bottom: 10px;
+}
+
+.dasboard .info-card h6 {
+    font-size: 28px;
+    color: #012970;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.dasboard .card-icon {
+    font-size: 32px;
+    line-height: 0;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.dasboard .sales-card .card-icon {
+    color: #4154f1;
+    background: #f6f6fe;
+}
+
+.dasboard .revenu-card .card-icon {
+    color: #2eca6a;
+    background: #e0f8e9;
+}
+
+.dasboard .customers-card .card-icon {
+    color: #ff771d;
+    background: #ffec;
+}
