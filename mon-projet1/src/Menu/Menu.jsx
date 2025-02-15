@@ -10,14 +10,14 @@ import Rep from "../images/republique-madagascar.jpg";
 function Menu() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   Axios.defaults.withCredentials = true;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
+    // setLoading(true);
 
     Axios.post("http://localhost:7000/admin/login", {
       email,
@@ -48,27 +48,27 @@ function Menu() {
         text: 'La connexion a échoué. Veuillez vérifier vos identifiants.',
       });
     })
-    .finally(() => {
-      setLoading(false);
-    });
+    // .finally(() => {
+    //   // setLoading(false);
+    // });
   };
 
   const handleLinkClick = (path) => {
-    setLoading(true);
-    setTimeout(() => {
+    // setLoading(true);
+    // setTimeout(() => {
       navigate(path);
-      setLoading(false);
-    }, 4000);
+      // setLoading(false);
+    // }, 4000);
   };
 
   return (
     <div>
-      {loading && (
+      {/* {loading && (
         <div className="loading-overlay">
           <div className="loading-spinner"></div>
           <p>Veuillez patienter s'il vous plaît</p>
         </div>
-      )}
+      )} */}
 
       <header className="head">
         <div className="header">
@@ -99,16 +99,16 @@ function Menu() {
             <a href="#admin" style={{ color: 'black' }}>Administrateur Dren</a> 
           </button>
           &nbsp;&nbsp; &nbsp;&nbsp;
-          <button onClick={() => handleLinkClick('/appli')} className="btn btn--white btn--animated">
+          {/* <button onClick={() => handleLinkClick('/appli')} className="btn btn--white btn--animated">
             Rapport d'activité
-          </button>
+          </button> */}
           <button
             onClick={() => handleLinkClick('/demandeAttestation')}
             className="btn btn--white btn--animated cursor-pointer bg-white text-success font-semibold log"
           >
             Attestation BEPC
           </button>
-          <button onClick={() => handleLinkClick('/')} className="btn btn--white btn--animated">
+          <button onClick={() => handleLinkClick('/stage-dren-Analamanga-mern')} className="btn btn--white btn--animated">
             Log Out
           </button>
         </div>

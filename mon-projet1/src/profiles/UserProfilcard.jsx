@@ -148,7 +148,7 @@ const UserProfilcard = () => {
                           className="m-3"
                           onClick={() => {
                             localStorage.removeItem("token"); // Logout
-                            navigate("/");
+                            navigate("/stage-dren-Analamanga-mern");
                           }}
                         >
                           Logout

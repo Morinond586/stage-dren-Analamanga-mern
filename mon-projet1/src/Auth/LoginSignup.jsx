@@ -9,7 +9,7 @@ function LoginSignup() {
   const [isForgotPassword, setIsForgotPassword] = useState(false);
   const [formData, setFormData] = useState({});
   const [errors, setErrors] = useState({});
-  const [loading, setLoading] = useState(false); // Loading state
+  // const [loading, setLoading] = useState(false); // Loading state
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -34,10 +34,10 @@ function LoginSignup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Start loading
+    // setLoading(true); // Start loading
 
-    // Simulate a loading delay of 4 seconds
-    await new Promise((resolve) => setTimeout(resolve, 4000));
+    // // Simulate a loading delay of 4 seconds
+    // await new Promise((resolve) => setTimeout(resolve, 4000));
 
     let validationErrors = {};
 
@@ -52,7 +52,7 @@ function LoginSignup() {
 
       if (Object.keys(validationErrors).length > 0) {
         setErrors(validationErrors);
-        setLoading(false); // Stop loading
+        // setLoading(false); // Stop loading
         return;
       }
 
@@ -82,7 +82,7 @@ function LoginSignup() {
 
         if (Object.keys(validationErrors).length > 0) {
           setErrors(validationErrors);
-          setLoading(false); // Stop loading
+          // setLoading(false); // Stop loading
           return;
         }
 
@@ -119,7 +119,7 @@ function LoginSignup() {
 
         if (Object.keys(validationErrors).length > 0) {
           setErrors(validationErrors);
-          setLoading(false); // Stop loading
+          // setLoading(false); // Stop loading
           return;
         }
 
@@ -134,16 +134,16 @@ function LoginSignup() {
         }
       }
     }
-    setLoading(false); // Stop loading
+    // setLoading(false); // Stop loading
   };
 
   return (
     <div className="body">
-      {loading && (
+      {/* {loading && (
         <div className="loading-overlay">
           <div className="loading-spinner"></div>
         </div>
-      )}
+      )} */}
       <div className="content justify-content-center align-items-center d-flex shadow-lg" id="content">
         {/* Formulaire de Connexion */}
         {!isForgotPassword && !isRegister && (

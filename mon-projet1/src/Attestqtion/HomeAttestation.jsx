@@ -10,7 +10,7 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import Checkbox from '@mui/material/Checkbox';
 import TextField from '@mui/material/TextField';
-import { FaFileExcel, FaFileImport, FaTrash } from 'react-icons/fa';
+import { FaFileExcel, FaTrash } from 'react-icons/fa';
 import { Button, Modal, Form } from 'react-bootstrap';
 import { MdAddCircle, MdEdit, MdPrint } from 'react-icons/md';
 import axios from 'axios';

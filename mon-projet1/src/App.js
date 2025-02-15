@@ -9,24 +9,21 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Pages from './serverApplications/Pages';
 import Appli from './Activiter/Appli';
-// import { Menu } from '@mui/material';
+
 import Menu from './Menu/Menu'
-import Form from './Form/Form'
-// import LoginSignup from './Auth/LoginSignup';
+
 import Table from './serverApplications/Table';
 import Listglobal from './Interface/Listglobal';
-import TableChaqueD from './Nancy/TableChaqueD';
+
 import Ajoutrapporst from './Activiter/Ajoutrapporst';
 import Sibar from './Contenu/Sibar';
 import ContenuSidebar from './Contenu/ContenuSidebar';
 import ModalForm from './Menu/ModalForm'
 import FormAjout from './Menu/FormAjout'
-import Crud from './TestCrud/Crud'
-import FormData from './TestCrud/FormData'
-import Edit from './TestCrud/Edit';
+
 import Upload from './Activiter/Upload';
-import ProfilUser from './TestCrud/ProfilUser';
-import Archives from './TestCrud/Archives';
+// import ProfilUser from './TestCrud/ProfilUser';
+// import Archives from './TestCrud/Archives';
 import Attestation from './Attestqtion/Attestation';
 import SiebarAttestation from './Attestqtion/SiebarAttestation';
 import HomeAttestation from './Attestqtion/HomeAttestation';
@@ -45,11 +42,6 @@ import Dashboard from './Auth/Dashboard';
 import Log from './Auth/Log';
 
 
-// import Update from './Menu/Update'
-// import Setting from './Contenu/Setting';
-// import { Modal } from 'bootstrap/dist/js/bootstrap.min.js';
-// import TestImprime from './Nancy/TestImprime';
-
 function App() {
 
   return  (
@@ -58,25 +50,13 @@ function App() {
     <Routes>
       <Route path='/menu' element={<Menu />}/>
    
-   
-      {/* <Route path='/loginsignup' element={<LoginSignup />}/> */}
-      <Route path='/form' element={<Form />}/>
       <Route path='/table' element={<Table />}/>
       <Route path='/list' element={<Listglobal />}/>
-      <Route path='/listD' element={<TableChaqueD />}/>
       <Route path='/Ajourapport' element={<Ajoutrapporst />}/>
       <Route path='/sidebarRapport' element={<ContenuSidebar />}/>
       <Route path='/modal' element={<ModalForm />}/>
       <Route path='/ajoutactiv' element={<FormAjout />}/>
       <Route path='/contSidbar' element={<Sibar />}/>
-      {/* <Route path='/ipdate' element={<Update />}/> */}
-      {/* <Route path='/test' element={<TestImprime />}/> */}
-      {/* test crud route */}
-      <Route path='/crud' element={<Crud />}/>
-      <Route path='/formd' element={<FormData />}/>
-      <Route path='/edit' element={<Edit />}/>
-      <Route path='/profile' element={<ProfilUser  />}/>
-      <Route path='/archive' element={<Archives  />}/>
 
        {/* route attestation */}
       <Route path='/attestation' element={<Attestation  />}/>
@@ -87,7 +67,7 @@ function App() {
       <Route path='/demandeAttestation' element={<DemandeAttestation />}/>
 
       {/* Authatification */}
-      <Route path='/' element={<LoginSignup />} /> 
+      <Route path='/stage-dren-Analamanga-mern' element={<LoginSignup />} /> 
       <Route path='/signup' element={<AdminSignup />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/login" element={<Log />} />

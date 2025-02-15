@@ -19,8 +19,8 @@ import Swal from 'sweetalert2';
 // Assurez-vous d'avoir une image de logo dans le dossier public
 import logoMadagascar from '../images/republique-madagascar.jpg';
 import logodren from '../images/logo.jpg';
-import Header from '../components/Header';
-import SidBar from '../components/SidBar';
+// import Header from '../components/Header';
+// import SidBar from '../components/SidBar';
 import SidbarServer from './SidbarServer';
 import AttestationFooter from '../Attestqtion/AttestatiionFooter';
 import ServerHeader from './ServerHeader';
@@ -162,7 +162,7 @@ function ServerAttestation() {
       <ServerHeader />
     <SidbarServer />
     <div className='container'>
-      <div className="main--content" style={{ marginTop: '-65%' }}>
+      <div className="main--content" style={{ marginTop: '-75%' }}>
         <div className="header--wrapper">
           <div className="header--title">
             <h2>Server d'Attestations</h2>

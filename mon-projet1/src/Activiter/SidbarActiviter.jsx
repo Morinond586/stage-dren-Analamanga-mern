@@ -66,7 +66,7 @@ function SidbarActiviter() {
           </li> */}
 
           <li className="logout d-flex">
-            <a href="/">
+            <a href="/stage-dren-Analamanga-mern">
               <FaSignOutAlt size={24} />
               <span>Logout</span>
             </a>

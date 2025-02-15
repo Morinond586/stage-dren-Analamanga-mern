@@ -9,7 +9,7 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import Checkbox from '@mui/material/Checkbox';
 import TextField from '@mui/material/TextField';
-import { Button, Modal, Form, Alert } from 'react-bootstrap';
+import { Button, Modal, Form } from 'react-bootstrap';
 import { MdAddCircle, MdEdit, MdPrint } from 'react-icons/md';
 import { FaTrash } from 'react-icons/fa';
 import axios from 'axios';
@@ -191,7 +191,7 @@ function AttestationServerDemande() {
       <ServerHeader />
       <SidbarServer />
       <div className="container mt-3">
-        <div className="d-flex justify-content-between mb-3" style={{marginTop: '-60%'}}>
+        <div className="d-flex justify-content-between mb-3" style={{marginTop: '-70%'}}>
           <h2>List des demandes</h2> 
           <TextField
             label="Recherche"

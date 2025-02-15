@@ -1,16 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Pie } from "react-chartjs-2";
 import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement } from "chart.js";
 import ApexCharts from 'react-apexcharts';
 import {
   BsFillArchiveFill,
   BsFillGrid3X3GapFill,
   BsPeopleFill,
-  BsFillBellFill,
-  BsScissors,
-  BsUnion,
-  BsBack,
-  BsOpencollective,
   BsPass,
 } from "react-icons/bs";
 import '../App.css';

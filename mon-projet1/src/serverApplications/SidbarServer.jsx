@@ -1,25 +1,14 @@
 import React from "react";
 import "../Attestqtion/Attestyle.css";
 
-// import
-// {BsFillBellFill, BsFillEnvelopeFill, BsPersonCircle, BsSearch, BsJustify, BsList, BsPerson, BsChatRight, BsGraphDown, BsFillArrowDownRightSquareFill}
-// from 'react-icons/bs';
 import {
   FaArrowLeft,
-  FaBackspace,
-  FaBackward,
   FaChartLine,
   FaCog,
-  FaDashcube,
-  FaDiagnoses,
-  FaList,
-  FaProjectDiagram,
   FaSignOutAlt,
-  FaTasks,
-  FaUser,
   FaUsers,
 } from "react-icons/fa";
-import { MdBrowserNotSupported, MdNewspaper, MdStadium, MdWork } from "react-icons/md";
+import {  MdNewspaper } from "react-icons/md";
 import { Link } from "@mui/material";
 
 function SidbarServer() {
@@ -44,7 +33,7 @@ function SidbarServer() {
 
           <li className="nav-item">
           <MdNewspaper className="icons" size={24} />
-          <a
+          <Link
             className="nav-link collapsed"
             data-bs-target="#spr-nav"
             data-bs-toggle="collapse"
@@ -54,7 +43,7 @@ function SidbarServer() {
             {/* <FaTasks className="icons" size={24} /> */}
             <span style={{marginTop: '-30%', marginLeft: '25%'}}>Attestations</span>
             <i className="bi bi-chevron-down"></i>
-          </a>
+          </Link>
           <ul
             id="spr-nav"
             className="nav-content collapse"
@@ -72,47 +61,9 @@ function SidbarServer() {
                 <span>Demandes</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                {/* <i className="bi bi-circle"></i> */}
-                <span>Statistiques</span>
-              </a>
-            </li>
           </ul>
         </li>
 
-        <li className="nav-item">
-          <MdWork className="icons" size={24} />
-          <a
-            className="nav-link collapsed"
-            data-bs-target="#activiter"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            {/* <i className="bi bi-journal-text"></i> */}
-            {/* <FaTasks className="icons" size={24} /> */}
-            <span style={{marginTop: '-30%', marginLeft: '25%'}}>Activiter</span>
-            <i className="bi bi-chevron-down"></i>
-          </a>
-          <ul
-            id="activiter"
-            className="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-               <li>
-              <a href="/table">
-                {/* <i className="bi bi-circle"></i> */}
-                <span>Rapports</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                {/* <i className="bi bi-circle"></i> */}
-                <span>Statistiques</span>
-              </a>
-            </li>
-          </ul>
-        </li>
         
           <li className="d-flex">
             <a href="/ToutsProfilsUsers">

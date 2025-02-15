@@ -25,12 +25,10 @@ import { visuallyHidden } from '@mui/utils';
 import Header from '../components/Header';
 import ContenuSidebar from '../Contenu/ContenuSidebar';
 import Img from '../images/bbb.jpg';
-import { MdClose, MdModeEdit, MdOutlineDeleteForever, MdAddCircleOutline, MdPrint, MdSend, MdKeyboardArrowLeft, MdKeyboardArrowRight, MdUploadFile, MdImportExport, MdUpdate } from 'react-icons/md';
+import {  MdPrint, MdImportExport } from 'react-icons/md';
 import { FaFileExcel } from 'react-icons/fa';
-import '../Nancy/Table.css'
 import FormAjout from '../Menu/FormAjout'
 import ModalForm from '../Menu/ModalForm'
-// import Update from '../Menu/Update';
 function createData(id, name, date, type, nom, image) {
   return {
     id,
@@ -410,7 +408,7 @@ export default function EnhancedTable() {
                       <TableCell align="right">{row.date}</TableCell>
                       <TableCell align="right">{row.type}</TableCell>
                       <TableCell align="right">{row.nom}</TableCell>
-                      <TableCell align="right"><img src={Img} style={{width: '50px', borderRadius: '45%'  }}/></TableCell>
+                      <TableCell align="right"><Img src={Img} style={{width: '50px', borderRadius: '45%'  }}/></TableCell>
                       <TableCell align="right"><ModalForm /></TableCell>
                     </TableRow>
                   );
